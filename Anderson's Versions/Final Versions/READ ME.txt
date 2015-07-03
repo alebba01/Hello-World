@@ -1,0 +1,9 @@
+These are the only files that should be run for IMU communications.
+
+The measurement acquisition is done with the baud rate set at 921k6,
+but the standard baud rate is 115k2. Therefore, there the two files
+to change the baud rate between the two.
+
+USB1 files are because speedgoat serial cable tends to initialize first,
+so they switch which device is on USB0 (originally the IMU, now the SG)
+and USB1. Otherwise, they are the same.
